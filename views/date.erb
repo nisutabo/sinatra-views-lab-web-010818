@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<h1> Today</h1>
+
+<% year = Time.now.year%>
+<% day_text = Time.now.strftime("%A")%>
+<% month = Time.now.strftime("%B")%>
+<% day_digit = Time.now.strftime("%d")%>
+<p><%="The date is #{day_text}, #{month} #{day_digit}, #{year.to_s}" %></p>
+</html>
